@@ -167,16 +167,16 @@ int postfixEvaluation(string chk)
                 st.push(a+b);
                 break;
             case '-':
-                st.push(a-b);
+                st.push(b-a);
                 break;
             case '*':
                 st.push(a*b);
                 break;
             case '/':
-                st.push(a/b);
+                st.push(b/a);
                 break;
             case '^':
-                st.push(pow(a,b));
+                st.push(pow(b,a));
                 break;
             default:
                 break;
@@ -304,3 +304,9 @@ int main()
 
     return 0;
 }
+
+
+/*
+    (4*(3+5))-(2+0)
+    435+*20+-
+*/
